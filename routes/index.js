@@ -27,7 +27,7 @@ router.post('/invite', function(req, res) {
         if (body.ok) {
           res.render('result', {
             community: config.community,
-            message: 'Success! Check "'+ req.body.email +'" for an invite from Slack. Lets work together to stop our procastinations.'
+            message: 'Success! Check "'+ req.body.email +'" for an invite from Slack. Lets work together to stop our procrastination.'
           });
         } else {
           var error = body.error;
